@@ -1,0 +1,254 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #a67c52cc 0%, #6b4f32cc 100%);
+  color: #f1e6d0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.login-container {
+  background: rgba(255, 245, 230, 0.15);
+  backdrop-filter: blur(18px);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(139, 94, 60, 0.3);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.login-container h1 {
+  margin-bottom: 30px;
+  color: #fff7e6;
+  font-weight: 600;
+  text-shadow: 1px 1px 6px #7c5e3fbb;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #e6d8c3;
+  font-weight: 500;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255, 245, 230, 0.9);
+  color: #5c422a;
+  font-size: 16px;
+  box-sizing: border-box;
+  transition: box-shadow 0.3s ease;
+}
+
+.form-group input:focus {
+  outline: none;
+  box-shadow: 0 0 15px rgba(139, 110, 79, 0.73);
+}
+
+.login-btn {
+  background: rgba(139, 110, 79, 0.8);
+  color: #fff7e6;
+  border: none;
+  padding: 12px 30px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 15px rgba(139, 110, 79, 0.87);
+}
+
+.login-btn:hover {
+  background: #7c5e3f;
+  box-shadow: 0 0 25px #7c5e3fdd;
+}
+
+.error-message {
+  color: #ff6b6b;
+  margin-top: 15px;
+  font-size: 14px;
+  display: none;
+}
+
+.register-link {
+  margin-top: 20px;
+  color: #e6d8c3;
+}
+
+.register-link a {
+  color: #fff7e6;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.register-link a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+  .login-container {
+    margin: 20px;
+    padding: 30px 20px;
+  }
+
+  .login-container h1 {
+    font-size: 24px;
+  }
+
+  .form-group input {
+    padding: 10px 12px;
+    font-size: 15px;
+  }
+
+  .login-btn {
+    padding: 10px 20px;
+    font-size: 15px;
+  }
+}
+
+.container {
+  background: rgba(255, 245, 230, 0.15);
+  backdrop-filter: blur(15px);
+  border-radius: 15px;
+  padding: 30px 40px;
+  width: 360px;
+  box-shadow: 0 8px 32px rgba(139, 94, 60, 0.37);
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #5c3a1a;
+}
+
+label {
+  display: block;
+  margin: 15px 0 6px;
+  font-weight: 600;
+  text-align: left;
+  color: #5c3a1a;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+  width: 100%;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  box-sizing: border-box;
+  background: rgba(255, 245, 230, 0.85);
+  color: #3a2c23;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="text"]:focus {
+  box-shadow: 0 0 8px #a57c55;
+}
+
+.btn {
+  margin-top: 20px;
+  width: 100%;
+  background: #a57c55;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #7d5a30;
+}
+
+.btn-secondary {
+  background: #6a5236;
+  margin-top: 15px;
+}
+
+.link-btn {
+  background: none;
+  border: none;
+  color: #836953;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 0;
+}
+
+.extra-actions {
+  margin-top: 15px;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(58, 44, 35, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-content {
+  background: rgba(255, 245, 230, 0.15);
+  backdrop-filter: blur(15px);
+  border-radius: 15px;
+  padding: 30px 35px;
+  width: 360px;
+  box-shadow: 0 8px 32px rgba(139, 94, 60, 0.37);
+  color: #3a2c23;
+  text-align: center;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.message-box {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #7d5a30;
+  padding: 12px 25px;
+  border-radius: 30px;
+  color: white;
+  font-weight: 600;
+  opacity: 0.95;
+  z-index: 1100;
+  box-shadow: 0 4px 12px rgba(125, 90, 48, 0.5);
+  transition: opacity 0.3s ease;
+}
+
+.message-box.success {
+  background-color: #a57c55;
+}
+
+.message-box.error {
+  background-color: #c94c36;
+}
